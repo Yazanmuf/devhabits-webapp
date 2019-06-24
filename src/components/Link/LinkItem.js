@@ -4,6 +4,7 @@ import { getDomain } from '../../utils'
 import distanceInWordsToNow from 'date-fns/distance_in_words_to_now'
 import { FirebaseContext } from "../../firebase";
 
+
 function LinkItem({ link, index, showCount, history }) {
 
   const { firebase, user } = React.useContext(FirebaseContext)
@@ -42,9 +43,9 @@ function LinkItem({ link, index, showCount, history }) {
         ▲
       </div>
     </div>
-    <div className='ml1'>
+    <div className='ml1 gray'>
       <div>
-        {link.description}  <span className='small grey'>({getDomain(link.resource)})</span>
+        {link.description}  <span className='grey' >({getDomain(link.resource)})</span>
       </div>
       <div className="f6 lh-copy gray">
         {link.votes.length} votes by {link.postedBy.name} {distanceInWordsToNow(link.created)}
@@ -64,7 +65,7 @@ function LinkItem({ link, index, showCount, history }) {
         )}
       </div>
     </div>
-  </div>)
+  </div >)
 }
 
 export default withRouter(LinkItem);

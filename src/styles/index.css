@@ -13,7 +13,7 @@ input {
 }
 
 .orange {
-  background-color: #ff6600;
+  background-color: orange;
 }
 
 .background-gray {
@@ -60,9 +60,9 @@ input {
 }
 
 .header {
-  background-color: #ff6600;
+  background-color: lightcyan;
   white-space: nowrap;
-  padding: 0.25rem;
+  padding: 1.25rem;
   color: black;
   justify-content: space-between;
   display: flex;
@@ -114,7 +114,7 @@ textarea {
 }
 
 .app-container {
-  width: 85%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }

@@ -11,6 +11,8 @@ class Firebase {
     this.db = app.firestore();
   }
 
+
+  // Buggy code, this allows to create a user without a name. Figure out how to require a name.
   async register(name, email, password) {
     const newUser = await this.auth.createUserWithEmailAndPassword(
       email,
